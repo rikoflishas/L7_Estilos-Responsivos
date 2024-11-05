@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1{
+    color:aquamarine;
+ }
+
+main{
+    height: 120vh;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkslategray;
+    color: lightgray;
+    padding: 25px 0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(6, 117, 130);
+    padding: 1rem; /*1rem aprox 16px*/
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    margin:0 15px;
+}
+
+.nav-list a{
+    color: bisque;
+    text-decoration: none;
+}
+
+.nav-list li{
+    margin-inline-end: 15px;
+}
+
+.main-section-footer{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer-section{
+    text-align: center;
+}
+
+.footer-section ul{
+    list-style: none;
+    padding: 0;
+}
+
+.icon-social-media{
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+
+.icon-facebook{
+    background-image: url(https://img.icons8.com/?size=100&id=118467&format=png&color=ffffff);
+}
+
+.icon-instagram{
+    background-image: url(https://img.icons8.com/?size=100&id=32309&format=png&color=ffffff);
+    border-radius: 50%;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copyright{
+    width:100%;
+    margin-top: 20px;
+    padding:15px 90px;
+    border-top:1px solid whitesmoke;
+}
+
+.menu-icon{
+    display: none;
+    background-image:url(https://img.icons8.com/?size=100&id=36389&format=png&color=ffffff);
+    width:32px;
+    height: 32px;
+    background-size: cover;
+}
+
+@media(width < 720px){
+    .menu-icon{
+        display: inline-block;
+    }
+    .nav-list li{
+        display: none;
+    }
+    .footer-section ul{
+        font-size: 5;
+    }
+}
